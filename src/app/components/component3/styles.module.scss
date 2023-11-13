@@ -1,0 +1,27 @@
+.custom-transition-opacity-current,
+.custom-transition-opacity-previous,
+.custom-transition-opacity-next {
+    opacity: 0.5;
+    animation-name: opacityEffect;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opacityEffect {
+    from {
+        opacity: 0.3;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.movement-arrow {
+    filter: brightness(1);
+
+    &.disabled {
+        filter: brightness(0.2);
+    }
+}
